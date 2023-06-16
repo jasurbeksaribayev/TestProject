@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\TestProject\ClassLibrary1\bin\Debug\net6.0\TestProject.Data.deps.json
+C:\Users\User\source\repos\TestProject\ClassLibrary1\bin\Debug\net6.0\TestProject.Data.runtimeconfig.json
+C:\Users\User\source\repos\TestProject\ClassLibrary1\bin\Debug\net6.0\TestProject.Data.dll
+C:\Users\User\source\repos\TestProject\ClassLibrary1\bin\Debug\net6.0\TestProject.Data.pdb
+C:\Users\User\source\repos\TestProject\ClassLibrary1\bin\Debug\net6.0\TestProject.Domain.dll
+C:\Users\User\source\repos\TestProject\ClassLibrary1\bin\Debug\net6.0\TestProject.Domain.pdb
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\TestProject.Data.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\TestProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\TestProject.Data.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\TestProject.Data.AssemblyInfo.cs
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\TestProject.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\TestProject.Data.csproj.CopyComplete
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\TestProject.Data.dll
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\refint\TestProject.Data.dll
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\TestProject.Data.pdb
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\TestProject.Data.genruntimeconfig.cache
+C:\Users\User\source\repos\TestProject\ClassLibrary1\obj\Debug\net6.0\ref\TestProject.Data.dll

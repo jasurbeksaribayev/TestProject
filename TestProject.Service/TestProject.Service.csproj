@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="IServices\StudentSubjects\" />
+    <Folder Include="IServices\Subjects\" />
+    <Folder Include="IServices\Teachers\" />
+    <Folder Include="Services\Subjects\" />
+    <Folder Include="Services\StudentSubjects\" />
+    <Folder Include="Services\Teachers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\TestProject.Data.csproj" />
+    <ProjectReference Include="..\TestProject.Domain\TestProject.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
