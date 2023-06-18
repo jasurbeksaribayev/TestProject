@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestProject.Domain.Entities;
-using TestProject.Domain.Enums;
+﻿using TestProject.Domain.Enums;
 using TestProject.Service.DTOs.StudentSubject;
 
 namespace TestProject.Service.DTOs.Student

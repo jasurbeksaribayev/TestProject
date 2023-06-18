@@ -25,8 +25,8 @@ namespace TestProject.Data.GenericRepositories
         public async Task<bool> DeleteAsync(int id)
         {
             var existEntity = await dbset.FirstOrDefaultAsync(e => e.Id.Equals(id));
-            
-            if(existEntity is not null)
+
+            if (existEntity is not null)
             {
                 dbset.Remove(existEntity);
                 return true;
@@ -38,7 +38,7 @@ namespace TestProject.Data.GenericRepositories
         {
             if (expression is null)
                 return dbset;
-            
+
             return dbset.Where(expression);
         }
 

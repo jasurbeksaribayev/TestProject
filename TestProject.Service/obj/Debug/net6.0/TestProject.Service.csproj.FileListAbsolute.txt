@@ -10,3 +10,8 @@ C:\Users\User\source\repos\TestProject\TestProject.Service\obj\Debug\net6.0\Test
 C:\Users\User\source\repos\TestProject\TestProject.Service\obj\Debug\net6.0\refint\TestProject.Service.dll
 C:\Users\User\source\repos\TestProject\TestProject.Service\obj\Debug\net6.0\TestProject.Service.pdb
 C:\Users\User\source\repos\TestProject\TestProject.Service\obj\Debug\net6.0\ref\TestProject.Service.dll
+C:\Users\user\source\repos\TestProject\TestProject.Service\bin\Debug\net6.0\TestProject.Data.dll
+C:\Users\user\source\repos\TestProject\TestProject.Service\bin\Debug\net6.0\TestProject.Domain.dll
+C:\Users\user\source\repos\TestProject\TestProject.Service\bin\Debug\net6.0\TestProject.Data.pdb
+C:\Users\user\source\repos\TestProject\TestProject.Service\bin\Debug\net6.0\TestProject.Domain.pdb
+C:\Users\user\source\repos\TestProject\TestProject.Service\obj\Debug\net6.0\TestProject.Service.csproj.CopyComplete

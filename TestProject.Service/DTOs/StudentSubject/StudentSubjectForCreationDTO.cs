@@ -1,7 +1,4 @@
-﻿using TestProject.Service.DTOs.Student;
-using TestProject.Service.DTOs.Subject;
-
-namespace TestProject.Service.DTOs.StudentSubject
+﻿namespace TestProject.Service.DTOs.StudentSubject
 {
     public class StudentSubjectForCreationDTO
     {

@@ -93,3 +93,7 @@ C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\TestProject.
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\TestProject.Domain.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\TestProject.Data.pdb
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\TestProject.Domain.pdb
+C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\TestProject.Service.dll
+C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\TestProject.Service.pdb

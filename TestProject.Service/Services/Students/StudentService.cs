@@ -1,13 +1,8 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using TestProject.Data.IGenericRepositories;
 using TestProject.Domain.Entities;
-using TestProject.Domain.Enums;
 using TestProject.Service.DTOs.Student;
 using TestProject.Service.Exceptions;
 using TestProject.Service.IServices.Students;
@@ -45,9 +40,9 @@ namespace TestProject.Service.Services.Students
 
             if (!existStudent)
                 throw new TestProjectException(404, "not found");
-            
+
             await studentRepository.SaveChangesAsync();
-            
+
             return true;
         }
 
@@ -69,11 +64,42 @@ namespace TestProject.Service.Services.Students
 
             return mapper.Map<IQueryable<StudentForViewDTO>>(existStudentsBornBetweenAugust18AndSeptember20);
         }
-        public Task<StudentForViewDTO> GetSearchAsync(Expression<Func<Student, bool>> func);
-        public Task<StudentForViewDTO> GetMaxScoreSubjectAsync(int id);
-        public Task<StudentForViewDTO> GetMaxScoreTeacherAsync();
-        public Task<StudentForViewDTO> GetAvarageScoreThemeAsync();
-        public Task<IEnumerable<StudentForViewDTO>> GetAllAsync();
+        public async Task<IEnumerable<StudentForViewDTO>> GetSearchAsync(Expression<Func<Student, bool>> func)
+        {
+            var existStudents = studentRepository.GetAll(func);
+
+            if (existStudents is null)
+                throw new TestProjectException(404, "not found");
+
+            return mapper.Map<IQueryable<StudentForViewDTO>>(existStudents);
+        }
+        public async Task<IEnumerable<StudentForViewDTO>> GetMaxScoreSubjectAsync(int id)
+        {
+            var existStudent = studentRepository.GetAll().Include(s => s.StudentSubjects.Max(s => s.Grade));
+
+            if (existStudent is null)
+                throw new TestProjectException(404, "not found");
+
+            return mapper.Map<IQueryable<StudentForViewDTO>>(existStudent);
+        }
+        public Task<IEnumerable<StudentForViewDTO>> GetMaxScoreTeacherAsync()
+        {
+            throw new NotImplementedException();
+        }
+        public Task<IEnumerable<StudentForViewDTO>> GetAvarageScoreThemeAsync()
+        {
+            throw new NotImplementedException();
+
+        }
+        public async Task<IEnumerable<StudentForViewDTO>> GetAllAsync()
+        {
+            var existStudent = studentRepository.GetAll();
+
+            if (existStudent is null)
+                throw new TestProjectException(404, "not found");
+
+            return mapper.Map<IQueryable<StudentForViewDTO>>(existStudent);
+        }
 
         public async Task<StudentForViewDTO> UpdatesAsync(int id, StudentForCreationDTO studentForCreationDTO)
         {

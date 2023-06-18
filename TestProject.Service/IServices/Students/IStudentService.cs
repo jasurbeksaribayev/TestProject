@@ -11,10 +11,10 @@ namespace TestProject.Service.IServices.Students
         Task<bool> DeletesAsync(int id);
         Task<IEnumerable<StudentForViewDTO>> GetAgeAsync();
         Task<IEnumerable<StudentForViewDTO>> GetDateAsync();
-        Task<StudentForViewDTO> GetSearchAsync(Expression<Func<Student, bool>> func);
-        Task<StudentForViewDTO> GetMaxScoreSubjectAsync(int id);
-        Task<StudentForViewDTO> GetMaxScoreTeacherAsync();
-        Task<StudentForViewDTO> GetAvarageScoreThemeAsync();
+        Task<IEnumerable<StudentForViewDTO>> GetSearchAsync(Expression<Func<Student, bool>> func);
+        Task<IEnumerable<StudentForViewDTO>> GetMaxScoreSubjectAsync(int id);
+        Task<IEnumerable<StudentForViewDTO>> GetMaxScoreTeacherAsync();
+        Task<IEnumerable<StudentForViewDTO>> GetAvarageScoreThemeAsync();
         Task<IEnumerable<StudentForViewDTO>> GetAllAsync();
     }
 }

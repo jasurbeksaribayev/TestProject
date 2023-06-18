@@ -8,11 +8,7 @@
 
   <ItemGroup>
     <Folder Include="IServices\StudentSubjects\" />
-    <Folder Include="IServices\Subjects\" />
-    <Folder Include="IServices\Teachers\" />
-    <Folder Include="Services\Subjects\" />
     <Folder Include="Services\StudentSubjects\" />
-    <Folder Include="Services\Teachers\" />
   </ItemGroup>
 
   <ItemGroup>
