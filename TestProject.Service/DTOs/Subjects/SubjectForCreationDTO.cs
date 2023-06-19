@@ -1,4 +1,4 @@
-﻿namespace TestProject.Service.DTOs.Subject
+﻿namespace TestProject.Service.DTOs.Subjects
 {
     public class SubjectForCreationDTO
     {

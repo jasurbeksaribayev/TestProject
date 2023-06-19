@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using TestProject.Data.IGenericRepositories;
 using TestProject.Domain.Entities;
+using TestProject.Service.DTOs.Students;
 using TestProject.Service.DTOs.Teacher;
 using TestProject.Service.Exceptions;
 using TestProject.Service.IServices.Teachers;
@@ -31,7 +33,7 @@ namespace TestProject.Service.Services.Teachers
             return mapper.Map<TeacherForViewDTO>(teacher);
         }
 
-        public async Task<bool> DeletesAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
             var existTeacher = await teacherRepository.DeleteAsync(id);
 
@@ -43,27 +45,39 @@ namespace TestProject.Service.Services.Teachers
             return true;
         }
 
-        public async Task<IEnumerable<TeacherForViewDTO>> GetAgeAsync()
+        public async Task<IEnumerable<TeacherForViewDTO>> GetByAgeAsync()
         {
-            var existTeacherAgeFromFiftyFive = teacherRepository.GetAll(s => DateTime.Now.Year - s.BirthDate.Year >= 55);
+            var existTeacherAgeFromFiftyFive = teacherRepository.GetAll().
+                Where(s => DateTime.Now.Year - s.BirthDate.Year >= 55).
+                Include(t => t.Subjects).ThenInclude(s=>s.StudentSubjects.Select(s => s.Student));
 
             if (existTeacherAgeFromFiftyFive is null)
                 throw new TestProjectException(404, "not found");
 
-            return mapper.Map<IQueryable<TeacherForViewDTO>>(existTeacherAgeFromFiftyFive);
+            return mapper.Map<IEnumerable<TeacherForViewDTO>>(existTeacherAgeFromFiftyFive);
         }
 
-        public async Task<IEnumerable<TeacherForViewDTO>> GetAllAsync()
+        public async Task<IEnumerable<TeacherForViewDTO>> GetMobileNumberStartWith90And91Async()
         {
-            var existTeacher = teacherRepository.GetAll();
+            var teachers = teacherRepository.GetAll(s => s.PhoneNumber.StartsWith("+99890") || s.PhoneNumber.StartsWith("+99891"));
+
+            if (teachers is null)
+                throw new TestProjectException(404, "not found");
+
+            return mapper.Map<IEnumerable<TeacherForViewDTO>>(teachers);
+        }
+
+    public async Task<IEnumerable<TeacherForViewDTO>> GetAllAsync()
+        {
+            var existTeacher = teacherRepository.GetAll().Include(t => t.Subjects);
 
             if (existTeacher is null)
                 throw new TestProjectException(404, "not found");
 
-            return mapper.Map<IQueryable<TeacherForViewDTO>>(existTeacher);
+            return mapper.Map<IEnumerable<TeacherForViewDTO>>(existTeacher);
         }
 
-        public async Task<TeacherForViewDTO> UpdatesAsync(int id, TeacherForCreationDTO teacherForCreationDTO)
+        public async Task<TeacherForViewDTO> UpdateAsync(int id, TeacherForCreationDTO teacherForCreationDTO)
         {
             var existTeacher = await teacherRepository.GetAsync(s => s.Id.Equals(id));
 

@@ -33,8 +33,6 @@ C:\Users\User\source\repos\TestProject\TestProject\obj\Debug\net6.0\ref\TestProj
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Azure.Identity.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Humanizer.dll
-C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
-C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -63,8 +61,6 @@ C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.Id
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Mono.TextTemplating.dll
-C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\User\source\repos\TestProject\TestProject\bin\Debug\net6.0\System.Drawing.Common.dll
@@ -97,3 +93,8 @@ C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\AutoMapper.d
 C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\TestProject.Service.dll
 C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\TestProject.Service.pdb
+C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\user\source\repos\TestProject\TestProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

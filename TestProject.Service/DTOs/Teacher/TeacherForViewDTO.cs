@@ -1,5 +1,5 @@
 ﻿using TestProject.Domain.Enums;
-using TestProject.Service.DTOs.Subject;
+using TestProject.Service.DTOs.Subjects;
 
 namespace TestProject.Service.DTOs.Teacher
 {

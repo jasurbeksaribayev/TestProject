@@ -1,5 +1,6 @@
-﻿using TestProject.Service.DTOs.Student;
-using TestProject.Service.DTOs.Subject;
+﻿using TestProject.Domain.Entities;
+using TestProject.Service.DTOs.Students;
+using TestProject.Service.DTOs.Subjects;
 
 namespace TestProject.Service.DTOs.StudentSubject
 {

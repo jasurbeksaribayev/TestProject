@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using TestProject.Domain.Entities;
-using TestProject.Service.DTOs.Student;
+using TestProject.Service.DTOs.Students;
 using TestProject.Service.DTOs.StudentSubject;
-using TestProject.Service.DTOs.Subject;
+using TestProject.Service.DTOs.Subjects;
 using TestProject.Service.DTOs.Teacher;
 
 namespace TestProject.Service.Mappers

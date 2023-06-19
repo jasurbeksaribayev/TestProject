@@ -1,7 +1,8 @@
-﻿using TestProject.Domain.Enums;
+﻿using System.ComponentModel.DataAnnotations;
+using TestProject.Domain.Enums;
 using TestProject.Service.DTOs.StudentSubject;
 
-namespace TestProject.Service.DTOs.Student
+namespace TestProject.Service.DTOs.Students
 {
     public class StudentForViewDTO
     {
